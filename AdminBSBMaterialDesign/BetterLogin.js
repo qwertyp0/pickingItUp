@@ -19,7 +19,6 @@ function setAllCookie() {
     if (!setCookie("pass-word", document.getElementById("password").value, 1)){
         return false;
     }
-    alert("ASDF");
 }
     
 function getCookie(cname) {

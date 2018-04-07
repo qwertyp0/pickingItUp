@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src=BetterLogin.js></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -185,8 +186,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div> <!--> put in get cookie function</!-->
-                    <div class="email">john.doe@example.com</div>
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><script>document.write(getCookie("user-name"))</script></div> 
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
@@ -224,24 +224,7 @@
                             <span>Map</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="material-icons">F</i>
-                            <span>Forum</span>
-                        </a>
-                    </li>
-                   
             <!-- #Menu -->
-            <!-- Footer -->
-            <div class="legal">
-                <div class="copyright">
-                    &copy; 2016 - 2017 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
-                </div>
-                <div class="version">
-                    <b>Version: </b> 1.0.5
-                </div>
-            </div>
-            <!-- #Footer -->
         </aside>
         <!-- #END# Left Sidebar -->
         <!-- Right Sidebar -->
@@ -420,24 +403,12 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-light-green hover-expand-effect">
-                        <div class="icon">
-                            <i class="material-icons">F</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">Forum Activity</div>
-                            <div class="number count-to" data-from="0" data-to="100" data-speed="1000" data-fresh-interval="20"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-orange hover-expand-effect">
                         <div class="icon">
                             <i class="material-icons">M</i>
                         </div>
                         <div class="content">
-                            <div class="text">MAP</div>
-                            <div class="number count-to" data-from="0" data-to="1225" data-speed="1000" data-fresh-interval="20"></div>
+                            <div class="text">College Park, MD</div>
                         </div>
                     </div>
                 </div>

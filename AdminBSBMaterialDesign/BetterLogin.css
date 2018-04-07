@@ -40,11 +40,11 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   background: #1CCEEA;
-  width: 100%;
+  width: 90%;
   border: 0;
   padding: 7px;
   color: #FFFFFF;
-  font-size: 14px;
+  font-size: 12px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
