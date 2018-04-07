@@ -3,36 +3,8 @@
     <head>
         <script type="text/javascript">
             function setCookie(cname, cvalue, exdays) {
-                if (cvalue == "select one"){
-                    alert("Invalid Option")
-                    return false;
-                }
-                var d = new Date();
-                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-                var expires = "expires="+d.toUTCString();
-                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-                return true;
-            }
-
-            function setAgeCookie(cname, cvalue, exdays){
-                if (parseInt(cvalue) < 21){
-                    alert("Age must be above 21");
-                    return false;
-                }
-                if (cvalue.length == 0){
+                if (cvalue == ""){
                     alert("Invalid Input")
-                    return false;
-                }
-                var d = new Date();
-                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-                var expires = "expires="+d.toUTCString();
-                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-                return true;
-            }
-
-            function setWeightCookie(cname, cvalue, exdays){
-                if (cvalue.length == 0){
-                    alert("Please put in a weight in pounds");
                     return false;
                 }
                 var d = new Date();
@@ -46,19 +18,7 @@
                 if (!setCookie("user-name", document.getElementById("username").value, 1)){
                     return false;
                 }
-                if (!setAgeCookie("age", document.getElementById("fage").value, 1)){
-                    return false;
-                }
-                if (!setWeightCookie("weight", document.getElementById("fweight").value, 1)){
-                    return false;
-                }
-                if (!setCookie("food", document.getElementById("ffood").value, 1)){
-                    return false;
-                }
-                if (!setCookie("party-level", document.getElementById("fparty-level").value, 1)){
-                    return false;
-                }
-                if (!setCookie("party-time", document.getElementById("fparty-time").value, 1)){
+                if (!setCookie("pass-word", document.getElementById("password").value, 1)){
                     return false;
                 }
                 window.location.href = "GamePlan.html";
