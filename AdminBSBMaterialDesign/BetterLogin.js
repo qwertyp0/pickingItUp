@@ -12,16 +12,14 @@ function setCookie(cname, cvalue, exdays) {
     
     
 function setAllCookie() {
-     "use strict";
+   /*"use strict";*/
     if (!setCookie("user-name", document.getElementById("username").value, 1)){
         return false;
     }
     if (!setCookie("pass-word", document.getElementById("password").value, 1)){
         return false;
     }
-    alert(getCookie("user-name"));
-    window.location.href = "";
-    /**put in dashboard here*/
+    alert("ASDF");
 }
     
 function getCookie(cname) {

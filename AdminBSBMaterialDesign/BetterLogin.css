@@ -36,19 +36,23 @@
   box-sizing: border-box;
   font-size: 14px;
 }
-.form button {
+.form  #bad {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  outline: 0;
   background: #1CCEEA;
   width: 100%;
   border: 0;
-  padding: 15px;
+  padding: 7px;
   color: #FFFFFF;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
+  text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    
 }
 .form button:hover,.form button:active,.form button:focus {
   background: #11C1DB;
