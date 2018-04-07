@@ -1,0 +1,31 @@
+.container-table100  {
+    border: 1px solid red;
+    color: #666666;
+    margin-bottom: 50px;
+}
+.wrap-table100  {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap-table100 > .table100-col  {
+    flex: auto;
+    margin-left: 40px;
+}
+
+.body {
+}
+
+th  {
+    font-size: 1.7em;
+    padding: 20px;
+    color: #222222;
+    padding-left: 0px;
+}
+
+td  {
+    font-size: 1.2em;
+    padding: 10px;
+    padding-left: 20px;
+    width: 100%;
+}

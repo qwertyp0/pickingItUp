@@ -3056,6 +3056,10 @@ section.content {
       margin-bottom: 20px; }
 
 /* Infobox ===================================== */
+.flex {
+    display: flex;
+    margin-bottom: 30px;
+}
 .info-box {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   height: 80px;
